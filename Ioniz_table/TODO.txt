@@ -1,0 +1,17 @@
+The Ionization module will be usefull to determine the non-ideal terms. 
+Bethune et al. 2017 used their own modules. 
+
+We will use the ionization table which is based on Desch & Turner 2015. 
+
+
+1) Load the data and plot the diffusion coefficients for Ohmic and Ambipolar for a density of 10^-10 g/cm^2, Ceta=1e-19, beta=10^5 for different temperatures.
+
+2) Create a interpolation function based on the input table. 
+
+There is a guide here but if there is a problem I can also help
+https://scipy.github.io/devdocs/generated/scipy.interpolate.RegularGridInterpolator.html
+
+The idea is to have a working routine which we can use to give it a value of rho,temp,ceta and beta and it return the value for Ohmic and Ambipolar diffusion in cm^2/s.
+
+
+
