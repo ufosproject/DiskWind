@@ -1,0 +1,34 @@
+
+xz -d eta.dat.xz
+
+19 Collumns of the eta.dat file:
+
+   (1)--(4) = integer indices into the next four input variables.                                 
+   (5)--(8) = corresponding temperature (K), gas density (g/cm^3),					        non-thermal ionization rate (s^-1), and plasma beta.                       
+   (9)-(11) = Ohmic, Hall, and ambipolar diffusivities (cm^2/s).                                     (12)-(18) = number densities of the seven species in the chemical                                            network: 1. molecular hydrogen, 2. free electrons,                                 
+               3. HCO^+ as a representative molecular ion, 4. potassion                           
+               ions, 	5. neutral potassium atoms, 6. potassium adsorbed on                                     	     grains, and 7. the grains themselves.                                    	   (19) = the grains' mean charge, in units of the proton charge.
+
+
+
+   * Below 550K, non-thermal ionization dominates, and the electrons
+     produced are quickly swept up by the grains.  The main positive and
+     negative carriers are molecular ions (subscript i) and grains.
+
+    
+
+   * Up to 1050K, thermionic emission releases potassium ions (K+) and
+     electrons, but once again the grains sweep up the electrons.  The
+     main charge carriers are K+ and grains.
+
+    
+
+   * Up to 1350K, most potassium atoms desorb from grains into the gas.
+     Both thermionic emission and collisions with neutrals produce
+     copious K+ ions and electrons, which are the main charge carriers.
+
+    
+
+   * Above 1350K, the grains sublimate.  The K+ ions and electrons follow
+     the Saha equation (pink curve) till all available potassium is
+     ionized.  Then their densities level off at the K abundance, 3e-7.
